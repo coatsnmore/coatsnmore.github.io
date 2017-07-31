@@ -58,7 +58,7 @@ var AboutComponent = (function () {
     return AboutComponent;
 }());
 AboutComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'about',
         template: __webpack_require__("../../../../../src/app/about/about.component.html"),
         styles: [__webpack_require__("../../../../../src/app/about/about.component.css")]
@@ -114,7 +114,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -133,14 +133,16 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__experiments_experiments_component__ = __webpack_require__("../../../../../src/app/experiments/experiments.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__navigation_navigation_component__ = __webpack_require__("../../../../../src/app/navigation/navigation.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__webgl_webgl_component__ = __webpack_require__("../../../../../src/app/webgl/webgl.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__notification_notification_component__ = __webpack_require__("../../../../../src/app/notification/notification.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__audio_audio_component__ = __webpack_require__("../../../../../src/app/audio/audio.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__experiments_experiments_component__ = __webpack_require__("../../../../../src/app/experiments/experiments.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__navigation_navigation_component__ = __webpack_require__("../../../../../src/app/navigation/navigation.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__webgl_webgl_component__ = __webpack_require__("../../../../../src/app/webgl/webgl.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__notification_notification_component__ = __webpack_require__("../../../../../src/app/notification/notification.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__audio_audio_component__ = __webpack_require__("../../../../../src/app/audio/audio.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__map_map_component__ = __webpack_require__("../../../../../src/app/map/map.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -160,27 +162,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var appRoutes = [
-    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_5__about_about_component__["a" /* AboutComponent */] },
+    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_6__about_about_component__["a" /* AboutComponent */] },
     {
         path: 'experiments',
-        component: __WEBPACK_IMPORTED_MODULE_6__experiments_experiments_component__["a" /* ExperimentsComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_7__experiments_experiments_component__["a" /* ExperimentsComponent */]
     },
     {
         path: 'webgl',
-        component: __WEBPACK_IMPORTED_MODULE_9__webgl_webgl_component__["a" /* WebglComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_10__webgl_webgl_component__["a" /* WebglComponent */]
     },
     {
         path: 'notifications',
-        component: __WEBPACK_IMPORTED_MODULE_10__notification_notification_component__["a" /* NotificationComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_11__notification_notification_component__["a" /* NotificationComponent */]
     },
     {
         path: 'audio',
-        component: __WEBPACK_IMPORTED_MODULE_11__audio_audio_component__["a" /* AudioComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_12__audio_audio_component__["a" /* AudioComponent */]
+    },
+    {
+        path: 'map',
+        component: __WEBPACK_IMPORTED_MODULE_13__map_map_component__["a" /* MapComponent */]
     },
     {
         path: 'home',
-        component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */]
     },
     {
         path: '',
@@ -196,23 +204,27 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__about_about_component__["a" /* AboutComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__experiments_experiments_component__["a" /* ExperimentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__navigation_navigation_component__["a" /* NavigationComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__webgl_webgl_component__["a" /* WebglComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__notification_notification_component__["a" /* NotificationComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__audio_audio_component__["a" /* AudioComponent */]
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__about_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__experiments_experiments_component__["a" /* ExperimentsComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__navigation_navigation_component__["a" /* NavigationComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__webgl_webgl_component__["a" /* WebglComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__notification_notification_component__["a" /* NotificationComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__audio_audio_component__["a" /* AudioComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__map_map_component__["a" /* MapComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: false } // <-- debugging purposes only
-            )
+            ),
+            __WEBPACK_IMPORTED_MODULE_4__agm_core__["a" /* AgmCoreModule */].forRoot({
+                apiKey: 'AIzaSyBoCoDi_hdFHUK1wERvz3dqlZ5JaOrElfI'
+            })
         ],
         providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -499,11 +511,11 @@ var AudioComponent = (function () {
     return AudioComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* Input */])(),
     __metadata("design:type", Object)
 ], AudioComponent.prototype, "song", void 0);
 AudioComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'app-audio',
         template: __webpack_require__("../../../../../src/app/audio/audio.component.html"),
         styles: [__webpack_require__("../../../../../src/app/audio/audio.component.css")]
@@ -560,7 +572,7 @@ var ExperimentsComponent = (function () {
     return ExperimentsComponent;
 }());
 ExperimentsComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'experiments',
         template: __webpack_require__("../../../../../src/app/experiments/experiments.component.html"),
         styles: [__webpack_require__("../../../../../src/app/experiments/experiments.component.css")]
@@ -616,7 +628,7 @@ var HomeComponent = (function () {
     return HomeComponent;
 }());
 HomeComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'home',
         template: __webpack_require__("../../../../../src/app/home/home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/home.component.css")]
@@ -624,6 +636,69 @@ HomeComponent = __decorate([
 ], HomeComponent);
 
 //# sourceMappingURL=home.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/map/map.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "agm-map {\r\n    height: 300px;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/map/map.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n  <h2> <i class=\"fa fa-globe\" aria-hidden=\"true\"></i> Map</h2>\n\n  <label for=\"lat\">Latitude</label>\n  <input id=\"lat\" [(ngModel)]=\"lat\" placeholder=\"Latitude\" type=\"number\" />\n\n  <br><br>\n\n  <label for=\"lng\">Longitude</label>\n  <input [(ngModel)]=\"lng\" placeholder=\"Longtitude\" type=\"number\" />\n\n  <br><br>\n  <agm-map [latitude]=\"lat\" [longitude]=\"lng\">\n    <agm-marker [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\n  </agm-map>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/map/map.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MapComponent = (function () {
+    function MapComponent() {
+        this.lat = 39.9612;
+        this.lng = -82.9988;
+    }
+    MapComponent.prototype.ngOnInit = function () {
+    };
+    return MapComponent;
+}());
+MapComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
+        selector: 'app-map',
+        template: __webpack_require__("../../../../../src/app/map/map.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/map/map.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], MapComponent);
+
+//# sourceMappingURL=map.component.js.map
 
 /***/ }),
 
@@ -648,7 +723,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navigation/navigation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div style=\"text-align:center\">\r\n  <img width=\"300\" class=\"img-circle\" src=\"https://avatars3.githubusercontent.com/u/2763721?v=4&s=460\">\r\n  <nav>\r\n    <a routerLink=\"/\" routerLinkActive=\"active\" class=\"button nav-button fa fa-home fa-2x\">Home</a>\r\n    <a routerLink=\"/webgl\" routerLinkActive=\"active\" class=\"button nav-button fa fa-gamepad fa-2x\">WebGL + Gamepad</a>\r\n    <a routerLink=\"/notifications\" routerLinkActive=\"active\" class=\"button nav-button fa fa-exclamation-circle fa-2x\">Web Notifications</a>\r\n    <a routerLink=\"/audio\" routerLinkActive=\"active\" class=\"button nav-button fa fa-soundcloud fa-2x\">Web Audio</a>\r\n    <a routerLink=\"/about\" routerLinkActive=\"active\" class=\"button nav-button fa fa-user-o fa-2x\">About</a>\r\n  </nav>\r\n  <a href=\"https://www.facebook.com/nick.coats.go\" class=\"fa fa-facebook-square fa-2x\"></a>\r\n  <a href=\"https://twitter.com/coatsnmore\" class=\"fa fa-twitter-square fa-2x\"></a>\r\n  <a href=\"https://github.com/coatsnmore\" class=\"fa fa-github-square fa-2x\"></a>\r\n  <a href=\"https://stackoverflow.com/users/262106/nick\" class=\"fa fa-stack-overflow fa-2x\"></a>\r\n</div>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div style=\"text-align:center\">\r\n  <img width=\"300\" class=\"img-circle\" src=\"https://avatars3.githubusercontent.com/u/2763721?v=4&s=460\">\r\n  <nav>\r\n    <a routerLink=\"/\" routerLinkActive=\"active\" class=\"button nav-button fa fa-home fa-2x\">Home</a>\r\n    <a routerLink=\"/webgl\" routerLinkActive=\"active\" class=\"button nav-button fa fa-gamepad fa-2x\">WebGL + Gamepad</a>\r\n    <a routerLink=\"/notifications\" routerLinkActive=\"active\" class=\"button nav-button fa fa-exclamation-circle fa-2x\">Web Notifications</a>\r\n    <a routerLink=\"/audio\" routerLinkActive=\"active\" class=\"button nav-button fa fa-soundcloud fa-2x\">Web Audio</a>\r\n    <a routerLink=\"/map\" routerLinkActive=\"active\" class=\"button nav-button fa fa-globe fa-2x\">Map</a>\r\n    <a routerLink=\"/about\" routerLinkActive=\"active\" class=\"button nav-button fa fa-user-o fa-2x\">About</a>\r\n  </nav>\r\n  <a href=\"https://www.facebook.com/nick.coats.go\" class=\"fa fa-facebook-square fa-2x\"></a>\r\n  <a href=\"https://twitter.com/coatsnmore\" class=\"fa fa-twitter-square fa-2x\"></a>\r\n  <a href=\"https://github.com/coatsnmore\" class=\"fa fa-github-square fa-2x\"></a>\r\n  <a href=\"https://stackoverflow.com/users/262106/nick\" class=\"fa fa-stack-overflow fa-2x\"></a>\r\n</div>"
 
 /***/ }),
 
@@ -671,7 +746,7 @@ var NavigationComponent = (function () {
     return NavigationComponent;
 }());
 NavigationComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'navigation',
         template: __webpack_require__("../../../../../src/app/navigation/navigation.component.html"),
         styles: [__webpack_require__("../../../../../src/app/navigation/navigation.component.css")]
@@ -778,7 +853,7 @@ var NotificationComponent = (function () {
     return NotificationComponent;
 }());
 NotificationComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'app-notification',
         template: __webpack_require__("../../../../../src/app/notification/notification.component.html"),
         styles: [__webpack_require__("../../../../../src/app/notification/notification.component.css")]
@@ -1267,7 +1342,7 @@ var WebglComponent = (function () {
     return WebglComponent;
 }());
 WebglComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Component */])({
         selector: 'app-webgl',
         template: __webpack_require__("../../../../../src/app/webgl/webgl.component.html"),
         styles: [__webpack_require__("../../../../../src/app/webgl/webgl.component.css")]
