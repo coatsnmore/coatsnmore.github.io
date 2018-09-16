@@ -21,7 +21,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "li {\r\n    list-style-type: circle;\r\n}", ""]);
+exports.push([module.i, "li {\n    list-style-type: circle;\n}", ""]);
 
 // exports
 
@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div>\r\n  <h2>\r\n    <i class=\"fa fa-user-o\" aria-hidden=\"true\"></i> About\r\n  </h2>\r\n  \r\n</div>\r\n<div class=\"row\">\r\n  <div class=\"twelve columns\">\r\n    <section>\r\n      <em>I am...</em>\r\n      <br>\r\n      <ul>\r\n        <li>Nicholas J Coats.</li>\r\n        <li>a Software Developer whose been hacking away at Enterprise software for over a decade..</li>\r\n        <li>a Devoted Dogfather.</li>\r\n        <li>a Manic Musician.</li>\r\n      </ul>\r\n    </section>\r\n\r\n    <section>\r\n      <em>I work on...</em>\r\n      <br>\r\n      <ul>\r\n        <li>Java.</li>\r\n        <li>Javascript.</li>\r\n        <li>REST APIs.</li>\r\n        <li>My Abs.</li>\r\n      </ul>\r\n    </section>\r\n</div>\r\n\r\n\r\n\r\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div>\n  <h2>\n    <i class=\"fa fa-user-o\" aria-hidden=\"true\"></i> About\n  </h2>\n  \n</div>\n<div class=\"row\">\n  <div class=\"twelve columns\">\n    <section>\n      <em>I am...</em>\n      <br>\n      <ul>\n        <li>Nicholas J Coats.</li>\n        <li>a Software Developer whose been hacking away at Enterprise software for over a decade..</li>\n        <li>a Devoted Dogfather.</li>\n        <li>a Manic Musician.</li>\n      </ul>\n    </section>\n\n    <section>\n      <em>I work on...</em>\n      <br>\n      <ul>\n        <li>Java.</li>\n        <li>Javascript.</li>\n        <li>REST APIs.</li>\n        <li>My Abs.</li>\n      </ul>\n    </section>\n</div>\n\n\n\n"
 
 /***/ }),
 
@@ -77,7 +77,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".heading {\r\n    background-color: #f4b342;\r\n    padding: 0.5em;\r\n}\r\n\r\n.navigation-pane {\r\n    /*background-color: #41a6f4;*/\r\n}", ""]);
+exports.push([module.i, ".heading {\n    background-color: #f4b342;\n    padding: 0.5em;\n}\n\n.navigation-pane {\n    /*background-color: #41a6f4;*/\n}", ""]);
 
 // exports
 
@@ -448,7 +448,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".song-display ol li {\r\n    list-style-type: none;\r\n    float: left;\r\n    margin-right: 1em;\r\n}", ""]);
+exports.push([module.i, ".song-display ol li {\n    list-style-type: none;\n    float: left;\n    margin-right: 1em;\n}", ""]);
 
 // exports
 
@@ -461,7 +461,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/audio/audio.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n\t<h2><i class=\"fa fa-soundcloud\" aria-hidden=\"true\"></i> Web Audio</h2>\n\t<p>The Web Audio API provides a powerful and versatile system for controlling audio on the Web, allowing developers to choose\n\t\taudio sources, add effects to audio, create audio visualizations, apply spatial effects (such as panning) and much more.</p>\n\n\t<div class=\"notes\">\n\t\t<h4>Notes</h4>\n\t\t<button (click)=\"add('G3')\">G</button>\n\t\t<button (click)=\"add('G#3/Ab3')\">Ab</button>\n\t\t<button (click)=\"add('A#3/Bb3')\">Bb</button>\n\t\t<button (click)=\"add('B3')\">B</button>\n\t\t<button (click)=\"add('C4')\">C</button>\n\t\t<button (click)=\"add('C#4/Db4')\">Db</button>\n\t\t<button (click)=\"add('D4')\">D</button>\n\t\t<button (click)=\"add('D#4/Eb4')\">Eb</button>\n\t\t<button (click)=\"add('E4')\">E</button>\n\t\t<button (click)=\"add('F4')\">F</button>\n\t\t<button (click)=\"add('F#4/Gb4')\">Gb</button>\n\t</div>\n\n\t<br>\n\n\t<div>\n\t\t<h4>Current Song</h4>\n\t\t<div class=\"song-display\">\n\t\t\t<ol>\n\t\t\t\t<li *ngFor=\"let note of song\">\n\t\t\t\t\t{{ note }}\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t</div>\n\t</div>\n\n\t<br>\n\t<br>\n\n\t<div>\n\t\t<h4>Oscillators</h4>\n\t\t<button (click)=\"changeOscillator('sine')\">Sine</button>\n\t\t<button (click)=\"changeOscillator('square')\">Square</button>\n\t\t<button (click)=\"changeOscillator('sawtooth')\">Sawtooth</button>\n\t\t<button (click)=\"changeOscillator('triangle')\">Triangle</button>\n\t</div>\n\n\t<br>\n\t<br>\n\n\t<div>\n\t\t<h4>Controls</h4>\n\t\t<button (click)=\"play()\" class=\"button-primary\">Play!</button>\n\t\t<button (click)=\"clear()\" class=\"button-primary\">Clear</button>\n\t</div>\n</div>"
+module.exports = "<div class=\"white-background\">\n\t<h2><i class=\"fa fa-soundcloud\" aria-hidden=\"true\"></i> Web Audio</h2>\n\t<p>The Web Audio API provides a powerful and versatile system for controlling audio on the Web, allowing developers to choose\n\t\taudio sources, add effects to audio, create audio visualizations, apply spatial effects (such as panning) and much more.</p>\n\n\t<div class=\"notes\">\n\t\t<h4>Notes</h4>\n\t\t<button (click)=\"add('G3')\">G</button>\n\t\t<button (click)=\"add('G#3/Ab3')\">Ab</button>\n\t\t<button (click)=\"add('A#3/Bb3')\">Bb</button>\n\t\t<button (click)=\"add('B3')\">B</button>\n\t\t<button (click)=\"add('C4')\">C</button>\n\t\t<button (click)=\"add('C#4/Db4')\">Db</button>\n\t\t<button (click)=\"add('D4')\">D</button>\n\t\t<button (click)=\"add('D#4/Eb4')\">Eb</button>\n\t\t<button (click)=\"add('E4')\">E</button>\n\t\t<button (click)=\"add('F4')\">F</button>\n\t\t<button (click)=\"add('F#4/Gb4')\">Gb</button>\n\t</div>\n\n\t<br>\n\n\t<div>\n\t\t<h4>Current Song</h4>\n\t\t<div class=\"song-display\">\n\t\t\t<ol>\n\t\t\t\t<li *ngFor=\"let note of song\">\n\t\t\t\t\t{{ note }}\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t</div>\n\t</div>\n\n\t<br>\n\t<br>\n\n\t<div>\n\t\t<h4>Oscillators</h4>\n\t\t<button (click)=\"changeOscillator('sine')\">Sine</button>\n\t\t<button (click)=\"changeOscillator('square')\">Square</button>\n\t\t<button (click)=\"changeOscillator('sawtooth')\">Sawtooth</button>\n\t\t<button (click)=\"changeOscillator('triangle')\">Triangle</button>\n\t</div>\n\n\t<br>\n\t<br>\n\n\t<div>\n\t\t<h4>Controls</h4>\n\t\t<button (click)=\"play()\" class=\"button-primary\">Play!</button>\n\t\t<button (click)=\"clear()\" class=\"button-primary\">Clear</button>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -548,7 +548,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/experiments/experiments.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div style=\"text-align:center\">\r\n  <h2>\r\n    Experiments\r\n  </h2>\r\n\r\n</div>\r\n<div class=\"row\">\r\n\r\n  <app-webgl></app-webgl>\r\n</div>\r\n<div class=\"row\">\r\n\r\n  Another Experiment\r\n</div>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h2>\n    Experiments\n  </h2>\n\n</div>\n<div class=\"row\">\n\n  <app-webgl></app-webgl>\n</div>\n<div class=\"row\">\n\n  Another Experiment\n</div>"
 
 /***/ }),
 
@@ -591,7 +591,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".home > div{\r\n    /* background: white; */\r\n    width: 80%;\r\n}", ""]);
 
 // exports
 
@@ -604,7 +604,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div>\r\n  <h2>\r\n    <i class=\"fa fa-home\" aria-hidden=\"true\"></i> Home\r\n  </h2>\r\n\r\n</div>\r\n<div class=\"row\">\r\n  <div class=\"twelve columns\">\r\n    <p>This is the personal website of Nicholas J Coats.</p>\r\n    <p>Explore my web experiments.</p>\r\n    <p>Read my blog.</p>\r\n    <p>Check out my <a href=\"http://github.com/coatsnmore\">code</a></p>\r\n  </div>\r\n</div>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div class=\"row\">\n\n  <div>\n    <h2>\n      <i class=\"fa fa-home\" aria-hidden=\"true\"></i> Home\n    </h2>\n  </div>\n\n  <br> <br>\n  <div class=\"twelve columns white-background\">\n    <p>This is the personal website of Nicholas J Coats.</p>\n    <p>Explore my web experiments.</p>\n    <p>Check out my <a href=\"http://github.com/coatsnmore\">code.</a></p>\n  </div>\n\n</div>"
 
 /***/ }),
 
@@ -647,7 +647,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "agm-map {\r\n    height: 300px;\r\n}", ""]);
+exports.push([module.i, "agm-map {\n    height: 300px;\n}", ""]);
 
 // exports
 
@@ -710,7 +710,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".nav-button {\r\n    width: 100%;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    color: black;\r\n}", ""]);
+exports.push([module.i, ".nav-button {\n    width: 100%;\n    background: white;\n}\n\na {\n    text-decoration: none;\n    color: black;\n}", ""]);
 
 // exports
 
@@ -723,7 +723,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navigation/navigation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<div style=\"text-align:center\">\r\n  <img width=\"300\" class=\"img-circle\" src=\"https://avatars3.githubusercontent.com/u/2763721?v=4&s=460\">\r\n  <nav>\r\n    <a routerLink=\"/\" routerLinkActive=\"active\" class=\"button nav-button fa fa-home fa-2x\">Home</a>\r\n    <a routerLink=\"/webgl\" routerLinkActive=\"active\" class=\"button nav-button fa fa-gamepad fa-2x\">WebGL + Gamepad</a>\r\n    <a routerLink=\"/notifications\" routerLinkActive=\"active\" class=\"button nav-button fa fa-exclamation-circle fa-2x\">Web Notifications</a>\r\n    <a routerLink=\"/audio\" routerLinkActive=\"active\" class=\"button nav-button fa fa-soundcloud fa-2x\">Web Audio</a>\r\n    <a routerLink=\"/map\" routerLinkActive=\"active\" class=\"button nav-button fa fa-globe fa-2x\">Map</a>\r\n    <a routerLink=\"/about\" routerLinkActive=\"active\" class=\"button nav-button fa fa-user-o fa-2x\">About</a>\r\n  </nav>\r\n  <a href=\"https://www.facebook.com/nick.coats.go\" class=\"fa fa-facebook-square fa-2x\"></a>\r\n  <a href=\"https://twitter.com/coatsnmore\" class=\"fa fa-twitter-square fa-2x\"></a>\r\n  <a href=\"https://github.com/coatsnmore\" class=\"fa fa-github-square fa-2x\"></a>\r\n  <a href=\"https://stackoverflow.com/users/262106/nick\" class=\"fa fa-stack-overflow fa-2x\"></a>\r\n</div>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <img width=\"300\" class=\"img-circle\" src=\"https://avatars3.githubusercontent.com/u/2763721?v=4&s=460\">\n  <nav>\n    <a routerLink=\"/\" routerLinkActive=\"active\" class=\"button nav-button fa fa-home fa-2x\">Home</a>\n    <a routerLink=\"/webgl\" routerLinkActive=\"active\" class=\"button nav-button fa fa-gamepad fa-2x\">WebGL</a>\n    <a routerLink=\"/notifications\" routerLinkActive=\"active\" class=\"button nav-button fa fa-exclamation-circle fa-2x\">Notifications</a>\n    <a routerLink=\"/audio\" routerLinkActive=\"active\" class=\"button nav-button fa fa-soundcloud fa-2x\">Web Audio</a>\n    <a routerLink=\"/map\" routerLinkActive=\"active\" class=\"button nav-button fa fa-globe fa-2x\">Map</a>\n    <a routerLink=\"/about\" routerLinkActive=\"active\" class=\"button nav-button fa fa-user-o fa-2x\">About</a>\n  </nav>\n  <a href=\"https://www.facebook.com/nick.coats.go\" class=\"fa fa-facebook-square fa-2x\"></a>\n  <a href=\"https://twitter.com/coatsnmore\" class=\"fa fa-twitter-square fa-2x\"></a>\n  <a href=\"https://github.com/coatsnmore\" class=\"fa fa-github-square fa-2x\"></a>\n  <a href=\"https://stackoverflow.com/users/262106/nick\" class=\"fa fa-stack-overflow fa-2x\"></a>\n</div>"
 
 /***/ }),
 
@@ -819,7 +819,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/notification/notification.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n\t\t<h2> <i class=\"fa fa-exclamation-circle\" aria-hidden=\"true\"></i> Web Notifications</h2>\n\t\t<p>The Notifications API allows web pages to control the display of system notifications to the end user — these are outside\n\t\t\tthe top-level browsing context viewport, so therefore can be displayed even the user has switched tabs or moved to a different\n\t\t\tapp. The API is designed to be compatible with existing notification systems across different platforms.</p>\n\t\t<div>\n\t\t\t<input [(ngModel)]=\"name\" placeholder=\"First and Last Name\" />\n\t\t\t<!--<p>Name: {{name}}</p>-->\n\t\t</div>\n    <br>\n\t\t<div>\n\t\t\t<button (click)=\"notify(name)\" class=\"button-primary\">Notify Me!</button>\n\t\t</div>\n\t</div>"
+module.exports = "<div class=\"white-background\">\n\t\t<h2> <i class=\"fa fa-exclamation-circle\" aria-hidden=\"true\"></i> Web Notifications</h2>\n\t\t<p>The Notifications API allows web pages to control the display of system notifications to the end user — these are outside\n\t\t\tthe top-level browsing context viewport, so therefore can be displayed even the user has switched tabs or moved to a different\n\t\t\tapp. The API is designed to be compatible with existing notification systems across different platforms.</p>\n\t\t<div>\n\t\t\t<input [(ngModel)]=\"name\" placeholder=\"First and Last Name\" />\n\t\t\t<!--<p>Name: {{name}}</p>-->\n\t\t</div>\n    <br>\n\t\t<div>\n\t\t\t<button (click)=\"notify(name)\" class=\"button-primary\">Notify Me!</button>\n\t\t</div>\n\t</div>"
 
 /***/ }),
 
@@ -938,6 +938,262 @@ class Controls {
 
 /***/ }),
 
+/***/ "../../../../../src/app/webgl/Enemy.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class Enemy {
+
+    constructor(size, x, y, world) {
+        this.world = world;
+        this.size = size;
+        this.graphics(x, y);
+        this.body(x, y);
+        this.speed = 100;
+        this.turnSpeed = 1;
+        this.bullets = {
+            collection: [],
+            speed: 50,
+            max: 1,
+            size: 5,
+            rate: 1, // second(s)
+            okayToFire: true
+        };
+        this.turnDirection = false;
+
+        // start adjustment update timer
+        this.adjustToPlayer = false;
+        let restartAdjustToPlayer = function () {
+            this.adjustToPlayer = true;
+        }.bind(this);
+        setInterval(restartAdjustToPlayer, 5000);
+    }
+
+    graphics(x, y) {
+        this.graphics = new PIXI.Container();
+
+        let hull = new PIXI.Graphics();
+        this.hull = hull;
+        hull.beginFill(0xc93c2a);
+        // player.graphics.lineStyle(5, 0xFF0000);
+        hull.moveTo(0, this.size);
+        hull.lineTo(0, this.size * (2 / 3));
+        hull.lineTo(this.size / 2, 0);
+        hull.lineTo(this.size, this.size * (2 / 3));
+        hull.lineTo(this.size, this.size);
+        hull.lineTo(this.size * (2 / 3), this.size * (2 / 3));
+        hull.lineTo(this.size * (1 / 3), this.size * (2 / 3));
+        hull.endFill();
+        this.graphics.addChildAt(hull, 0);
+
+        let engine = new PIXI.Graphics();
+        this.engine = engine;
+        engine.beginFill(0xF7ED60);
+        // player.graphics.lineStyle(5, 0xFF0000);
+        engine.moveTo(this.size * (1 / 3), this.size * (2 / 3));
+        engine.lineTo(this.size * (2 / 3), this.size * (2 / 3));
+        engine.lineTo(this.size * (1 / 2), this.size);
+        engine.endFill();
+        engine.alpha = 0;
+
+        this.graphics.addChildAt(engine, 1);
+
+        // position
+        this.graphics.x = x;
+        this.graphics.y = y;
+
+        // adjust graphics center
+        this.graphics.pivot.x = this.size / 2;
+        this.graphics.pivot.y = this.size / 2;
+
+        this.graphics.rotation = Math.PI;
+
+        return this.graphics;
+    }
+
+    body(x, y) {
+        this.body = new p2.Body({
+            mass: 0.1,
+            angularVelocity: 0.6,
+            damping: 0.8,
+            angularDamping: 0,
+            position: [x, y]
+        });
+
+        // console.log(`this.world: ${this.world}`);
+        this.world.getBodies().enemies.push(this.body.id);
+
+        this.shape = new p2.Box({
+            width: this.size,
+            height: this.size
+        });
+        this.body.addShape(this.shape);
+        return this.body;
+    }
+
+    update(controls, sceneWidth, sceneHeight, stage, world, player) {
+        // basicContols(controls);
+        // console.log('updating');
+
+        // control enemy fire
+        if (this.okayToFire) {
+            this.fire(stage, world);
+            // this.enemy.fire(this.stage, this.world);
+        }
+
+        // https://math.stackexchange.com/questions/1201337/finding-the-angle-between-two-points
+        // tanθ=y/x , so tan−1y/x=θ
+
+        // var turnAngleTowardPlayer = Math.atan2(player.getGraphics().y, this.graphics.x);
+        if (this.adjustToPlayer) {
+            if (this.turnDirection) {
+                this.body.angularVelocity = 1;
+            } else {
+                this.body.angularVelocity = -1;
+            }
+            this.turnDirection = !this.turnDirection;
+            this.adjustToPlayer = false;
+        }
+
+        // console.log('this.body.angularVelocity: ' + this.body.angularVelocity);
+
+        // velocity
+        // if (controls.up) {
+        // let angle = this.body.angle + Math.PI / 2;
+        //     // console.log('angle: ' + angle);
+        // this.body.force[0] -= this.speed * Math.cos(angle);
+        // this.body.force[1] -= this.speed * Math.sin(angle);
+        // this.engine.alpha = 1;
+        // } else {
+        //     this.engine.alpha = 0;
+        // }
+
+        // warp on boundaries
+        this.warp(sceneWidth, sceneHeight);
+
+        // update graphics
+        this.graphics.x = this.body.position[0];
+        this.graphics.y = this.body.position[1];
+        this.graphics.rotation = this.body.angle;
+
+        // update bullets
+        this.bullets.collection.forEach(bullet => {
+            // hit, then die
+            if(world.getBodies().collisions.enemyBullets.includes(bullet.body.id)){
+                bullet.graphics.alpha=0;
+                // this.graphics.remove(bullet.graphics);
+            }
+
+            // update graphics
+            bullet.graphics.x = bullet.body.position[0];
+            bullet.graphics.y = bullet.body.position[1];
+        });
+
+        // update bullets graphics
+        // for (let j = 0; j < this.bullets.collection.length; j++) {
+        //     let bullet = this.bullets.collection[j];
+
+        //     for (let k = 0; k < world.getBodies().collisions.enemyBullets.length; k++ ){
+        //         let id = world.getBodies().collisions.enemyBullets[k];
+        //     }
+        //     // kill hit bullets
+        //     // if( world.getBodies().collisions.enemyBullets.includes(bullet.body.id)){
+        //     //     // bullet.graphics.alpha = 0;
+        //     // }
+          
+        // }
+    }
+
+    warp(sceneWidth, sceneHeight) {
+
+        let x = this.body.position[0],
+            y = this.body.position[1];
+        if (x < 0) {
+            this.body.position[0] = sceneWidth;
+        } else if (x > sceneWidth) {
+            this.body.position[0] = 0;
+        }
+
+        if (y < 0) {
+            this.body.position[1] = sceneHeight;
+        } else if (y > sceneHeight) {
+            this.body.position[1] = 0;
+        }
+    }
+
+    /**
+     * Basic Controls for testing.
+     */
+    basicContols(controls) {
+        if (controls.left) {
+            this.graphics.x--;
+        } else if (controls.right) {
+            this.graphics.x++;
+        } else if (controls.up) {
+            this.graphics.y--;
+        } else if (controls.down) {
+            this.graphics.y++;
+        }
+    }
+
+    fire(stage, world) {
+        if (!this.bullets.okayToFire) {
+            return false;
+        }
+        var magnitude = this.speed * 1.5,
+            angle = this.body.angle - Math.PI / 2;
+
+        var bullet = {
+            graphics: new PIXI.Graphics(),
+            body: new p2.Body({
+                mass: 0,
+                damping: 0,
+                angularDamping: 0
+            }),
+            active: false
+        };
+
+        this.world.getBodies().enemyBullets.push(bullet.body.id);
+
+        // adjust physics
+        bullet.body.velocity[0] += magnitude * Math.cos(angle) + this.body.velocity[0];
+        bullet.body.velocity[1] += magnitude * Math.sin(angle) + this.body.velocity[1];
+        bullet.body.position[0] = (this.size / 2) * Math.cos(angle) + this.body.position[0];
+        bullet.body.position[1] = (this.size / 2) * Math.sin(angle) + this.body.position[1];
+
+        // Create bullet shape
+        var bulletShape = new p2.Circle({
+            radius: this.bullets.size
+        });
+        bullet.body.addShape(bulletShape);
+        world.addBody(bullet.body);
+
+        //graphics
+        bullet.graphics.beginFill(0xFFFFFF);
+        bullet.graphics.lineStyle(1, 0xFF0000);
+        bullet.graphics.drawRect(0, 0, this.bullets.size, this.bullets.size);
+        bullet.graphics.drawCircle(0, 0, this.bullets.size);
+        bullet.graphics.endFill();
+        stage.addChild(bullet.graphics);
+
+        this.bullets.collection.push(bullet);
+
+        // handle fire rate
+        this.bullets.okayToFire = false;
+        let restartFire = function () {
+            this.bullets.okayToFire = true;
+            // console.log('itso kay to fire again');
+        }.bind(this);
+        setTimeout(restartFire, this.bullets.rate * 1000);
+    }
+}
+/* unused harmony export Enemy */
+
+
+/* harmony default export */ __webpack_exports__["a"] = (Enemy);
+
+/***/ }),
+
 /***/ "../../../../../src/app/webgl/Gamepad.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -993,16 +1249,107 @@ class Gamepad {
 
 /***/ }),
 
+/***/ "../../../../../src/app/webgl/HUD.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class HUD {
+
+    constructor(size, x, y, world, player) {
+        this.world = world;
+        this.size = size;
+        this.world = world;
+        this.player = player;
+
+        this.HEALTH_WIDTH = 5;
+        this.HEALTH_HEIGHT = 100;
+
+        this.graphics(x, y);
+    }
+
+    graphics(x, y) {
+        this.graphics = new PIXI.Container();
+
+        let healthText = new PIXI.Text('Health', {
+            font: '24px Arial',
+            fill: 0xE34242,
+            align: 'center'
+        });
+        this.graphics.addChild(healthText);
+
+        this.showHealth(this.HEALTH_HEIGHT, x, y);
+
+        // position
+        this.graphics.x = x;
+        this.graphics.y = y;
+
+        // adjust graphics center
+        this.graphics.pivot.x = this.size / 2;
+        this.graphics.pivot.y = this.size / 2;
+
+        return this.graphics;
+    }
+
+    showHealth(playerHealth, x, y) {
+        x = x || this.graphics.x;
+        y = y || this.graphics.y;
+        let healthDisplay = new PIXI.Graphics();
+        this.healthDisplay = healthDisplay;
+        healthDisplay.beginFill(0x80f442);
+        healthDisplay.lineStyle(5, 0x80f442);
+        healthDisplay.drawRect(x, y, this.HEALTH_WIDTH, -playerHealth);
+        this.graphics.addChildAt(healthDisplay, 0);
+    }
+
+    restart(restartCallBack) {
+
+        let gameOver = new PIXI.Container();
+        let gameOverText = new PIXI.Text('Game Over!!!', {
+            font: '24px Arial',
+            fill: 0xE34242,
+            align: 'center'
+        });
+        gameOver.addChild(gameOverText);
+
+        gameOver.interactive = true;
+        gameOver.touchstart = gameOver.mousedown = ()=> {
+            console.log(`button touched to restart...`);
+            restartCallBack(true);
+        }
+        
+        gameOver.x = 100;
+        gameOver.y = 100;
+        this.graphics.addChild(gameOver);
+    }
+
+    update() {
+        // console.log(`refreshing player health at ${this.player.getHealth()}`);
+        // refresh health
+        let healthDisplay = this.graphics.removeChild(this.healthDisplay);
+        this.showHealth(this.player.getHealth());
+        // healthDisplay.setTransform({scaleY: 0.7});
+
+    }
+}
+/* unused harmony export HUD */
+
+
+/* harmony default export */ __webpack_exports__["a"] = (HUD);
+
+/***/ }),
+
 /***/ "../../../../../src/app/webgl/Player.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 class Player {
 
-    constructor(size, x, y) {
+    constructor(size, x, y, world) {
+        this.world = world;
         this.size = size;
         this.graphics(x, y);
         this.body(x, y);
+        this.world = world;
         this.speed = 100;
         this.turnSpeed = 2;
         this.bullets = {
@@ -1013,6 +1360,11 @@ class Player {
             rate: 1, // second(s)
             okayToFire: true
         };
+        this.health = 50;
+    }
+
+    getHealth(){
+        return this.health;
     }
 
     graphics(x, y) {
@@ -1057,12 +1409,13 @@ class Player {
 
     body(x, y) {
         this.body = new p2.Body({
-            mass: 1,
+            mass: 0.1,
             angularVelocity: 0,
-            damping: 0,
+            damping: 0.8,
             angularDamping: 0,
             position: [x, y]
         });
+        this.world.getBodies().player = this.body.id;
 
         this.shape = new p2.Box({
             width: this.size,
@@ -1072,8 +1425,27 @@ class Player {
         return this.body;
     }
 
-    update(controls, sceneWidth, sceneHeight) {
+    update(controls, sceneWidth, sceneHeight, stage, world) {
         // basicContols(controls);
+
+        // handle player hit
+        if(world.getBodies().collisions.player){
+            this.health -= 10;
+            console.error(`player health: ${this.health}!!`);
+        }
+
+        // test player death
+        if(this.health <= 0){
+            console.error(`player died!!!`);
+            return false;
+            // do something like end game?
+        }
+
+         // handle player fire
+        if(controls.fire){
+            this.fire(stage, world);
+            // this.enemy.fire(this.stage, this.world);
+        }
 
         // player angles
         if (controls.left) {
@@ -1111,6 +1483,12 @@ class Player {
             bullet.graphics.x = bullet.body.position[0];
             bullet.graphics.y = bullet.body.position[1];
         }
+        
+        return true;
+    }
+
+    getGraphics(){
+        return this.graphics;
     }
 
     warp(sceneWidth, sceneHeight) {
@@ -1162,6 +1540,8 @@ class Player {
             active: false
         };
 
+        this.world.getBodies().playerBullets.push(bullet.body.id);
+
         // adjust physics
         bullet.body.velocity[0] += magnitude * Math.cos(angle) + this.body.velocity[0];
         bullet.body.velocity[1] += magnitude * Math.sin(angle) + this.body.velocity[1];
@@ -1206,8 +1586,12 @@ class Player {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Player__ = __webpack_require__("../../../../../src/app/webgl/Player.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Controls__ = __webpack_require__("../../../../../src/app/webgl/Controls.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__World__ = __webpack_require__("../../../../../src/app/webgl/World.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Enemy__ = __webpack_require__("../../../../../src/app/webgl/Enemy.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Controls__ = __webpack_require__("../../../../../src/app/webgl/Controls.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__World__ = __webpack_require__("../../../../../src/app/webgl/World.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__HUD__ = __webpack_require__("../../../../../src/app/webgl/HUD.js");
+
+
 
 
 
@@ -1215,9 +1599,10 @@ class Player {
 class Scene {
 
     constructor(domId, width, height) {
-        this.controls = new __WEBPACK_IMPORTED_MODULE_1__Controls__["a" /* default */]();
+        this.controls = new __WEBPACK_IMPORTED_MODULE_2__Controls__["a" /* default */]();
         this.width = width;
         this.height = height;
+        this.paused = false;
 
         // builds the webgl renderer if available in browser
         this.renderer = new PIXI.autoDetectRenderer(width, height);
@@ -1227,33 +1612,85 @@ class Scene {
         let sceneElement = document.getElementById(domId);
         sceneElement.append(this.renderer.view);
 
+        this.restart();
+    }
+
+    restart(unpause) {
+        if (this.paused && !unpause){
+            return;
+        }
+        console.log(`restarting: ${this}`);
         // create stage
         this.stage = new PIXI.Container();
 
+        // create world and add physics
+        this.world = new __WEBPACK_IMPORTED_MODULE_3__World__["a" /* default */](60);
+
         // add new player to stage
-        this.player = new __WEBPACK_IMPORTED_MODULE_0__Player__["a" /* default */](50, 100, 100, this.world, this.stage);
+        this.player = new __WEBPACK_IMPORTED_MODULE_0__Player__["a" /* default */](50, 300, 400, this.world);
         this.stage.addChild(this.player.graphics);
 
-        // create world and add physics
-        this.world = new __WEBPACK_IMPORTED_MODULE_2__World__["a" /* default */](60);
+        // create HUD
+        this.hud = new __WEBPACK_IMPORTED_MODULE_4__HUD__["a" /* default */](50, 25, 250, this.world, this.player);
+        this.stage.addChild(this.hud.graphics);
+
+        this.enemies = [];
+
+        // add new enemy to stage
+        this.enemy = new __WEBPACK_IMPORTED_MODULE_1__Enemy__["a" /* default */](50, 200, 100, this.world);
+        this.stage.addChild(this.enemy.graphics);
+        this.enemies.push(this.enemy);
+
+        // add second enemy to stage
+        this.enemy2 = new __WEBPACK_IMPORTED_MODULE_1__Enemy__["a" /* default */](50, 500, 200, this.world);
+        this.stage.addChild(this.enemy2.graphics);
+        this.enemies.push(this.enemy2);
+
+        // add new bodies to world
         this.world.addBody(this.player.body);
+        this.world.addBody(this.enemy.body);
+        this.world.addBody(this.enemy2.body);
+        this.paused = false;
+
+        this.tick();
+    }
+
+    restartScreen() {
+        this.paused = true;
+        this.hud.restart(this.restart.bind(this));
     }
 
     tick() {
+        console.log(`tick..`)
         // draw
         this.renderer.render(this.stage);
-        window.requestAnimationFrame(this.tick.bind(this));
+
+        if (!this.paused) {
+            window.requestAnimationFrame(this.tick.bind(this));
+        }
 
         // step physics
         this.world.update();
 
         // update positions of objects in scene
-        this.player.update(this.controls.getState(), this.width, this.height);
+        let playerOkay = this.player.update(this.controls.getState(), this.width, this.height, this.stage, this.world);
 
-        // handle player fire
-        if(this.controls.getState().fire){
-            this.player.fire(this.stage, this.world);
+        // game end conditions
+        if (!playerOkay){ 
+            this.restartScreen();
         }
+
+        // update enemies
+        this.enemies.forEach((enemy) => enemy.update(this.controls.getState(), this.width, this.height, this.stage, this.world, this.player));
+
+        // start all enemies firing
+        this.enemies.forEach((enemy) => enemy.fire(this.stage, this.world));
+
+        // update HUD
+        this.hud.update();
+
+        // clear collisions
+        this.world.clearCollisions();
     }
 
 }
@@ -1274,6 +1711,73 @@ class World {
         this.world = new p2.World({
             gravity: [0, 0]
         });
+        this.detectCollisions();
+    }
+
+    getBodies() {
+        return this.bodies;
+    }
+
+    clearCollisions() {
+        this.bodies.collisions = {
+            player: null,
+            playerBullets: [],
+            enemies: [],
+            enemyBullets: [],
+        }
+    }
+
+    detectCollisions() {
+        this.bodies = {
+            player: 1,
+            playerBullets: [],
+            enemies: [],
+            enemyBullets: [],
+            collisions: {
+                player: null,
+                playerBullets: [],
+                enemies: [],
+                enemyBullets: [],
+            }
+        };
+
+        this.world.on('beginContact', function (e) {
+            // console.log(`${e.bodyA.id} hit ${e.bodyB.id}!`);
+            // console.log(`this.idRegistry ${JSON.stringify(this.idRegistry)}`);
+
+            // if player hit
+            if (e.bodyA.id === this.bodies.player) {
+                // then got hit by B
+               
+                // enemy bullet hit player
+                if (this.bodies.enemyBullets.includes(e.bodyB.id)) {
+                    this.bodies.collisions.enemyBullets.push(e.bodyB.id);
+                    this.bodies.collisions.player = this.bodies.player;
+                }
+
+                // enemy hit player
+                if (this.bodies.enemies.includes(e.bodyB.id)) {
+                    this.bodies.collisions.enemies.push(e.bodyB.id);
+                    this.bodies.collisions.player = this.bodies.player;
+                }
+
+            } else if (e.bodyB.id === this.bodies.player) {
+                // then got hit by A
+
+                // enemy bullet hit player
+                if (this.bodies.enemyBullets.includes(e.bodyA.id)) {
+                    this.bodies.collisions.enemyBullets.push(e.bodyA.id);
+                    this.bodies.collisions.player = this.bodies.player;
+                }
+
+                // enemy hit player
+                if (this.bodies.enemies.includes(e.bodyA.id)) {
+                    this.bodies.collisions.enemies.push(e.bodyA.id);
+                    this.bodies.collisions.player = this.bodies.player;
+                }
+            }
+
+        }.bind(this));
     }
 
     addBody(body) {
@@ -1310,7 +1814,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/webgl/webgl.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n\t<h2> <i class=\"fa fa-gamepad\" aria-hidden=\"true\"></i> Web GL</h2>\n\t<p>WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D and 2D graphics within any compatible web\n\t\tbrowser without the use of plug-ins. WebGL does so by introducing an API that closely conforms to OpenGL ES 2.0 that can\n\t\tbe used in HTML5 canvas elements.</p>\n\n\t<p>In this little demo, I have used Pixi.js for convenient rendering, p2.js for physics, the Gamepad API for controls, and\n\t\tsome custom code to drive a little spaceship around and shoot some lasers.</p>\n\n\t<div>\n\t\t<i class=\"fa fa-gamepad fa-3x\" aria-hidden=\"true\"></i> <b>Gamepad Controls</b>\n\t\t<div>Left/Right to turn</div>\n\t\t<div>Up to Accelerate</div>\n\t\t<div>A to shoot.</div>\n\t</div>\n\t<div>\n\t\t<i class=\"fa fa-keyboard-o fa-3x\" aria-hidden=\"true\"></i> <b>Keyboard Controls</b>\n\t\t<div>Left/Right to turn</div>\n\t\t<div>Up to Accelerate</div>\n\t\t<div>Space bar to shoot.</div>\n\t</div>\n\n\t<div id=\"scene\"></div>\n</div>"
+module.exports = "<div>\n\t<h2> <i class=\"fa fa-gamepad\" aria-hidden=\"true\"></i> Web GL</h2>\n\t<div class=\"white-background\">\n\t\t<p>WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D and 2D graphics within any\n\t\t\tcompatible web\n\t\t\tbrowser without the use of plug-ins. WebGL does so by introducing an API that closely conforms to OpenGL ES 2.0 that\n\t\t\tcan\n\t\t\tbe used in HTML5 canvas elements.</p>\n\n\t\t<p>In this little demo, I have used Pixi.js for convenient rendering, p2.js for physics, the Gamepad API for\n\t\t\tcontrols, and\n\t\t\tsome custom code to drive a little spaceship around and shoot some lasers.</p>\n\n\t\t<div>\n\t\t\t<i class=\"fa fa-gamepad fa-3x\" aria-hidden=\"true\"></i> <b>Gamepad Controls</b>\n\t\t\t<div>Left/Right to turn</div>\n\t\t\t<div>Up to Accelerate</div>\n\t\t\t<div>A to shoot.</div>\n\t\t</div>\n\t\t<div>\n\t\t\t<i class=\"fa fa-keyboard-o fa-3x\" aria-hidden=\"true\"></i> <b>Keyboard Controls</b>\n\t\t\t<div>Left/Right to turn</div>\n\t\t\t<div>Up to Accelerate</div>\n\t\t\t<div>Space bar to shoot.</div>\n\t\t</div>\n\t</div>\n\t<div id=\"scene\"></div>\n</div>"
 
 /***/ }),
 
@@ -1336,7 +1840,7 @@ var WebglComponent = (function () {
     function WebglComponent() {
     }
     WebglComponent.prototype.ngOnInit = function () {
-        var scene = new __WEBPACK_IMPORTED_MODULE_1__Scene_js__["a" /* Scene */]('scene', 600, 300);
+        var scene = new __WEBPACK_IMPORTED_MODULE_1__Scene_js__["a" /* Scene */]('scene', 800, 600);
         scene.tick();
     };
     return WebglComponent;
