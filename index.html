@@ -1,36 +1,33 @@
-<!doctype html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>NickCoats</title>
-  <base href="/">
-
-  <script>
-  window.onload = function() {
-  Particles.init({
-    selector: '.background',
-    connectParticles: true,
-    sizeVariations: '4',
-    maxParticles: 200,
-    speed: '0.5',
-    // color: ['#6C8699', '#000000'],
-    color: '#000000',
-    minDistance: 120,
-    responsive: null
-  });
-};
-</script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://use.fontawesome.com/1003ba34b7.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.4/pixi.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p2.js/0.7.1/p2.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-
+    <title>VanillaJS Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/webmanifest.json">
 </head>
+
 <body>
-  <canvas class="background"></canvas>
-  <app-root></app-root>
-<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+    <h1 id="journey-header">
+        End of The Journeyyyy
+    </h1>
+    <nc-intro></nc-intro>
+    <nav>
+        <ul>
+            <li class="button"><a href="#meaning">meaning</a></li>
+            <li class="button"><a href="#joy">joy</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <h3>Your reward...</h3>
+    <section id="slot">
+        <!---->
+    </section>
+
+    <script src="workers.js"></script>
+    <script src="intro/intro.js" type="module"></script>
+    <script src="meaning/meaning.js" type="module"></script>
+    <script src="router.js" type="module"></script>
+</body>
+
 </html>
